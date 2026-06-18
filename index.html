@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Plons! · Welke buitenbaden zijn nu open? — Limburg &amp; Kempen</title>
 <meta name="description" content="Live status van buitenzwembaden en zwemvijvers in Limburg en de Antwerpse Kempen. Zie in één oogopslag welke baden nu open of dicht zijn, gesorteerd op afstand vanaf Ham." />
+<link rel="canonical" href="https://timmersdavy.github.io/plons-zwembaden/" />
+<meta name="theme-color" content="#0a2630" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='88'%3E🌊%3C/text%3E%3C/svg%3E" />
+<!-- Open Graph / Twitter — nette preview bij het delen van de link -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="nl_BE" />
+<meta property="og:title" content="Plons! · Welke buitenbaden zijn nu open?" />
+<meta property="og:description" content="Live overzicht van buitenzwembaden en zwemvijvers in Limburg en de Antwerpse Kempen — gesorteerd op afstand." />
+<meta property="og:url" content="https://timmersdavy.github.io/plons-zwembaden/" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Plons! · Welke buitenbaden zijn nu open?" />
+<meta name="twitter:description" content="Live overzicht van buitenzwembaden en zwemvijvers in Limburg en de Antwerpse Kempen." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -35,6 +47,7 @@
   h1,h2,h3,.brand{font-family:'Poppins',sans-serif;line-height:1.15}
   a{color:inherit;text-decoration:none}
   .wrap{width:min(1080px,92vw);margin-inline:auto}
+  .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 
   /* ---------- Top board (donker) ---------- */
   .board{background:radial-gradient(120% 130% at 80% -10%, #15485a 0, var(--deep) 55%);color:#e8f6f9;padding:22px 0 30px;position:relative;overflow:hidden}
@@ -177,7 +190,8 @@
     <div class="counter" id="counter"></div>
 
     <div class="searchrow">
-      <input type="text" id="search" placeholder="Zoek op naam, gemeente of postcode… (bv. Mol, 3920, Balen)" inputmode="text" autocomplete="off" />
+      <label for="search" class="visually-hidden">Zoek een bad op naam, gemeente of postcode</label>
+      <input type="text" id="search" aria-label="Zoek een bad op naam, gemeente of postcode" placeholder="Zoek op naam, gemeente of postcode… (bv. Mol, 3920, Balen)" inputmode="text" autocomplete="off" />
     </div>
   </div>
 </header>
