@@ -529,5 +529,9 @@ $("#year").textContent = new Date().getFullYear();
 tick(); setInterval(tick, 1000);          // klok elke seconde
 render(); setInterval(render, 60000);     // statussen elke minuut herberekenen
 </script>
+<script>
+  // Onzichtbare bezoekersteller
+  fetch('https://wk2026-belgie.netlify.app/.netlify/functions/bezoekers?site=plons&tel=1').catch(function(){});
+</script>
 </body>
 </html>
